@@ -6,7 +6,7 @@ session_start();
 $q_produk = 'SELECT * FROM product';
 $r_produk = mysqli_query($conn, $q_produk);
 
-$tittle = 'HomePage';
+$tittle = '| HomePage';
 include 'layout/header.php';
 ?>
 <main>

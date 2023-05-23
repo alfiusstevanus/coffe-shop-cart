@@ -7,7 +7,7 @@ $result = mysqli_query($conn, $q);
 $row = mysqli_fetch_assoc($result);
 $_SESSION['foto'] = $row['foto'];
 
-$tittle = 'User';
+$tittle = '| User';
 include 'layout/header.php';
 ?>
 <main>

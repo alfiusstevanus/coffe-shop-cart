@@ -1,6 +1,6 @@
 <?php
 include('server/connection.php');
-$tittle = 'Cart';
+$tittle = '| Cart';
 include('layout/header.php');
 session_start();
 ?>

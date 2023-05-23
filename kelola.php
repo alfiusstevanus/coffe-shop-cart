@@ -24,7 +24,7 @@ if (isset($_POST['up'])) {
 $q_produk = 'SELECT * FROM product';
 $r_produk = mysqli_query($conn, $q_produk);
 
-$tittle = 'Kelola Produk';
+$tittle = '| Kelola Produk';
 include 'layout/header.php';
 ?>
 

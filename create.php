@@ -1,5 +1,5 @@
 <?php
-$tittle = 'Tambah Produk';
+$tittle = '| Tambah Produk';
 include 'layout/header.php';
 ?>
 <div class="container w-75">
