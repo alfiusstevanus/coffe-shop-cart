@@ -16,7 +16,7 @@ include 'layout/header.php';
             <?php while ($row = mysqli_fetch_assoc($r_produk)) : ?>
                 <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
                     <div class="product">
-                        <img src="images/<?= $row['picture'] ?>" alt="<?= $row['picture'] ?>">
+                        <img class="rounded" src="images/<?= $row['picture'] ?>" alt="<?= $row['picture'] ?>">
                     </div>
                     <div class="judul pt-4 pb-1" name="nama_produk"><?= $row['product_name'] ?></div>
                     <div class="price" name="price">Rp <?= number_format($row['price']) ?>,00</div>

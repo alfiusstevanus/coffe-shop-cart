@@ -63,7 +63,7 @@ include 'layout/header.php';
         <?php while ($row = mysqli_fetch_assoc($r_produk)) : ?>
             <div class="col-lg-4 col-sm-6 product-item my-3">
                 <div class="product">
-                    <img src="images/<?= $row['picture'] ?>" alt="<?= $row['picture'] ?>">
+                    <img src="images/<?= $row['picture'] ?>" alt="<?= $row['picture'] ?>" class="rounded">
                 </div>
                 <div>
                     <input type="text" name="product_name" class="form-control text-center border-0 my-2" value="<?= $row['product_name'] ?>" readonly>
@@ -73,7 +73,7 @@ include 'layout/header.php';
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-4">
-                        <a class="btn btn-sm btn-primary bg-success border-0 d-flex justify-content-center" href="add-cart.php?id=<?= $row['product_id'] ?>" role="button">Add To Cart</a>
+                        <a class="btn btn-sm bg-success border-0 d-flex justify-content-center py-3 text-light" href="add-cart.php?id=<?= $row['product_id'] ?>" role="button">Add To Cart</a>
                     </div>
                     <div class="col-lg-4">
                         <a class="btn btn-sm btn-danger border-0 d-flex justify-content-center py-3" href="controller/delete.php?id=<?= $row['product_id'] ?>" role="button">Delete</a>
