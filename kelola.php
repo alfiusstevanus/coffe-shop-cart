@@ -73,7 +73,7 @@ include 'layout/header.php';
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-4">
-                        <a class="btn btn-sm bg-success border-0 d-flex justify-content-center py-3 text-light" href="add-cart.php?id=<?= $row['product_id'] ?>" role="button">Add To Cart</a>
+                        <a class="btn btn-sm bg-success border-0 d-flex justify-content-center py-3 text-light" href="add-cart.php?id=<?= $row['product_id'] ?>" role="button">Cart</a>
                     </div>
                     <div class="col-lg-4">
                         <a class="btn btn-sm btn-danger border-0 d-flex justify-content-center py-3" href="controller/delete.php?id=<?= $row['product_id'] ?>" role="button">Delete</a>
